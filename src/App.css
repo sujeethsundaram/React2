@@ -1,0 +1,75 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  border-color: black;
+  border-radius: 5px;
+}
+
+body{
+  margin: 0;
+  background: linear-gradient(to right, #00AAFF, #00FF6C);
+  
+}
+
+.output{
+  grid-column: 1/-1;
+  background-color:#000435;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 20px;
+  word-wrap: break-word;
+  word-break: break-all;
+  font-size: xx-large;
+}
+.output .previous{
+  color: rgb(255, 255, 255);
+
+}
+
+.output .current{
+  color: rgb(255, 255, 255);
+  
+
+}
+.calculator-grid{
+    display: grid;
+    justify-content: center;
+    margin-top: 3rem;
+    grid-auto-flow: row dense; 
+    grid-auto-rows: 4em; 
+    border-radius: 3px;
+    grid-template-columns: 4em 4em 4em 4.5em; 
+    grid-template-rows: 7em 4.5em 4.5em 4.5em 4.5em;
+    grid-template-areas: 
+    "p p p p"
+    ". . . t"
+    ". . . t"
+    ". . . t"
+    ". . . t"; 
+    background-color: #00000d;
+    width: 17.5%;
+    margin-left: 400px;
+    border-radius: 12px;
+}
+.t {
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+  grid-area: t; 
+  
+}
+  
+button{
+  background-color: #00001a;
+  color: rgba(240, 248, 255, 0.871);
+  font-size:x-large;
+  font-weight:lighter;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: rgb(218, 255, 255);
+}
+
+button:hover , button:focus{
+  background-color: rgba(12, 0, 61, 0.637);
+}
